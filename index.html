@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
 
-    <style>
+<style>
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: lightgray;
-  padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-      html, body {
+    html, body {
          height: 100%;
          margin: 0;
          display: flex;
          justify-content: center;
          align-items: center;
             }
+            
     body {
         background-color: lightgray;
     }
@@ -46,72 +47,90 @@ header {
     <title>WingtoResume</title>
 </head>
 <body>
-    <header>
-        <h1>Wingto</h1>
-        <p>Contact Information: 
-            <span>Email: 
-             <a href="mailto:your@email.com">
-             your@email.com</a> | 
-        Phone: (020)18026402078
-    </span>
-        </p>
-      </header>
 
-      <main>
-        <section>
-          <h2>Summary</h2>
-          <p>Add a summary of your skills, experience, and career goals here.</p>
-        </section>
+    <div id="page-wrap">
+    
+        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+    
+        <div id="contact-info" class="vcard">
         
-        <section>
-          <h2>Education</h2>
-          <ul>
-            <li>University Name, Degree Name, Graduation Year</li>
-            <li>High School Name, Graduation Year</li>
-          </ul>
-        </section>
+            <!-- Microformats! -->
         
-        <section>
-          <h2>Experience</h2>
-          <ul>
-            <li>
-              <h3>Job Title</h3>
-              <p>Company Name | Start Date - End Date</p>
-              <ul>
-                <li>Responsibility 1</li>
-                <li>Responsibility 2</li>
-                <li>Responsibility 3</li>
-              </ul>
-            </li>
-            <!-- Add more job experiences if needed -->
-          </ul>
-        </section>
+            <h1 class="fn">C'thulhu</h1>
         
-        <section>
-          <h2>Skills</h2>
-          <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills if needed -->
-          </ul>
-        </section>
+            <p>
+                Cell: <span class="tel">555-666-7777</span><br />
+                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                I am an outgoing and energetic (ask anybody) young professional, seeking a 
+                career that fits my professional skills, personality, and murderous tendencies. 
+                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
+                I can bring world domination to your organization. 
+            </p>
+        </div>
         
-        <section>
-          <h2>Awards and Certifications</h2>
-          <ul>
-            <li>Award/Certification 1</li>
-            <li>Award/Certification 2</li>
-            <li>Award/Certification 3</li>
-            <!-- Add more awards/certifications if needed -->
-          </ul>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2023 Your Name</p>
-      </footer>
-
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2>Withering Madness University - Planet Vhoorl</h2>
+                <p><strong>Major:</strong> Public Relations<br />
+                   <strong>Minor:</strong> Scale Tending</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd>
+                <h2>Office skills</h2>
+                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
+                
+                <h2>Computer skills</h2>
+                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Experience</dt>
+            <dd>
+                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
+                <ul>
+                    <li>Inspired and won highest peasant death competition among servants</li>
+                    <li>Helped coordinate managers to grow cult following</li>
+                    <li>Provided untimely deaths to all who opposed</li>
+                </ul>
+                
+                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
+                <ul>
+                    <li>Worked on grass-roots promotional campaigns</li>
+                    <li>Reduced theft and property damage percentages</li>
+                    <li>Janitorial work, Laundry</li>
+                </ul> 
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>References</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
 
 </body>
 </html>
