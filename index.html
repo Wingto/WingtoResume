@@ -49,30 +49,21 @@
         
             <!-- Microformats! -->
         
-            <h1 class="fn">邝永涛 WingtoKwong</h1>
-        
+            <h1 class="fn lang-toggle" data-chinese="邝永涛" data-english="WingtoKwong">邝永涛</h1>
+            <button onclick="toggleLanguage()"> Language Switch </button>
             <p>
                 Cell: <span class="tel">18026402078</span><br />
                 Email: <a class="email" href="627341343@qq.com">627341343@qq.com</a>
             </p>
-        </div>
-                
-        <div id="objective">
-            <p>
-               做减法
-
-            </p>
-        </div>
-        
-        <div class="clear"></div>
+      
         
         <dl>
             <dd class="clear"></dd>
             
-            <dt>教育</dt>
+            <dt class="fn lang-toggle" data-chinese="教育" data-english="Edu">教育</dt>
             <dd>
-                <h2>2019 - 本科 - 信息学院 - 计算机科学与技术</h2>
-                <p>广东理工学院<br />
+                <h2 class="fn lang-toggle" data-chinese="2019 - 本科 - 信息学院 - 计算机科学与技术" data-english="2019 - Bachelor - Computer College - Computer science">2019 - 本科 - 信息学院 - 计算机科学与技术</h2>
+                <p class="fn lang-toggle" data-chinese="广东理工学院" data-english="GuangDong Technology College">广东理工学院<br />
                     主修计算机科学，专注于程序设计和软件开发。</p>
             </dd>
             
@@ -113,7 +104,7 @@
                   
                 </ul> 
             </dd>
-            https://udw.digitalexpo.com/pc/home
+            
             
             <dd class="clear"></dd>
             
@@ -138,5 +129,22 @@
     
     </div>
 
+    <script>
+        // JavaScript 切换中英文内容
+        function toggleLanguage() {
+            var elements = document.querySelectorAll('.lang-toggle');
+            elements.forEach(function (element) {
+                var currentText = element.textContent;
+                var chineseText = element.getAttribute('data-chinese');
+                var englishText = element.getAttribute('data-english');
+
+                // 切换内容
+                element.textContent = currentText === chineseText ? englishText : chineseText;
+            });
+        }
+    </script>
+
+    <!-- 添加中英文切换按钮 -->
+    <button onclick="toggleLanguage()">切换语言</button>
 </body>
 </html>
